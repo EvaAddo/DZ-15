@@ -1,0 +1,305 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('../../fonts/icomoon.eot?ylc5w5');
+  src:  url('../../fonts/icomoon.eot?ylc5w5#iefix') format('embedded-opentype'),
+    url('../../fonts/icomoon.ttf?ylc5w5') format('truetype'),
+    url('../../fonts/icomoon.woff?ylc5w5') format('woff'),
+    url('../../fonts/icomoon.svg?ylc5w5#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-facebook:before {
+  content: "\ea90";
+}
+.icon-twitter:before {
+  content: "\ea96";
+}
+.icon-linkedin2:before {
+  content: "\eaca";
+}
+
+.container {
+ 	margin: 0 auto;
+ 	max-width: 1282px;
+ 	padding: 0 15px;
+}
+
+.card {
+	position: relative;
+	order: 1;
+	margin: 10px;
+	height: 320px;
+}
+
+.card-img{
+	height: 320px;
+	width: 100%;
+}
+
+.card:hover .cover {
+  opacity: 1;
+  visibility: visible;
+}
+
+.card:hover .card-description {
+  background-color: #3a454d;
+}
+
+.card:hover .card-title {
+  color: #fff;
+}
+
+.card:hover .card-sub-title {
+  color: #fff;
+}
+
+
+.card .cover {
+  background-color: rgba(255,255,255, .4);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  visibility: hidden;
+  transition: visibility .3s, opacity .3s;
+}
+
+.card .card-description {
+  background-color: #e1e6ea;
+  padding: 10px;
+  transition: background-color .15s;
+}
+
+.card .card-title {
+  color: #292f36;
+  margin: 0 0 5px;
+  text-transform: uppercase;
+  transition: color .15s;
+}
+
+.card .card-sub-title {
+  color: #8d8f92;
+  margin: 0;
+  transition: color .15s;
+}
+
+.social-networks {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.social-networks li {
+  padding: 0 1px 0 0;
+}
+
+.social-networks a {
+  display: block;
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  line-height: 50px;
+  background-color: #3a454d;
+  transition: background-color .15s;
+}
+
+.social-networks a:hover {
+  background-color: #4e5a62;
+}
+
+.photo-carousel{
+	width:90%;
+  	margin:0px auto;
+}
+
+.photo-carousel .slick-dotted.slick-slider {
+    margin-bottom: 30px;
+}
+
+.photo-carousel .slick-dots {
+    position: absolute;
+    bottom: -25px;
+
+    display: block;
+
+    width: 100%;
+    padding: 0;
+    margin: 0;
+
+    list-style: none;
+
+    text-align: center;
+}
+
+.photo-carousel .slick-dots li {
+    position: relative;
+
+    display: inline-block;
+
+    width: 20px;
+    height: 20px;
+    margin: 0 5px;
+    padding: 0;
+
+    cursor: pointer;
+}
+
+.photo-carousel .slick-dots li button {
+    font-size: 0;
+    line-height: 0;
+
+    display: block;
+
+    width: 20px;
+    height: 20px;
+    padding: 2px;
+
+    cursor: pointer;
+
+    color: transparent;
+    border: 0;
+    outline: none;
+    background: transparent;
+}
+
+.photo-carousel .slick-dots li button:hover,
+.photo-carousel .slick-dots li button:focus {
+    outline: none;
+}
+
+.photo-carousel .slick-dots li button:hover:before,
+.photo-carousel .slick-dots li button:focus:before {
+    opacity: 1;
+}
+
+.photo-carousel .slick-dots li button:before {
+    font-family: 'slick';
+    font-size: 6px;
+    line-height: 20px;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 20px;
+    height: 20px;
+
+    content: '•';
+    text-align: center;
+
+    opacity: .25;
+    color: black;
+
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.photo-carousel .slick-dots li.slick-active button:before {
+    opacity: .75;
+    color: black;
+}
+
+.photo-carousel .slick-prev,
+.photo-carousel .slick-next {
+    font-size: 0;
+    line-height: 0;
+
+    position: absolute;
+    top: 50%;
+
+    display: block;
+
+    width: 20px;
+    height: 20px;
+    padding: 0;
+    -webkit-transform: translate(0, -50%);
+    -ms-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+
+    cursor: pointer;
+
+    color: transparent;
+    border: none;
+    outline: none;
+    background: transparent;
+}
+
+.photo-carousel .slick-prev:hover,
+.photo-carousel .slick-prev:focus,
+.photo-carousel .slick-next:hover,
+.photo-carousel .slick-next:focus {
+    color: transparent;
+    outline: none;
+    background: transparent;
+}
+
+.photo-carousel .slick-prev:hover:before,
+.photo-carousel .slick-prev:focus:before,
+.photo-carousel.slick-next:hover:before,
+.photo-carousel .slick-next:focus:before {
+    opacity: 1;
+}
+
+.photo-carousel .slick-prev.slick-disabled:before,
+.photo-carousel .slick-next.slick-disabled:before {
+    opacity: .25;
+}
+
+.photo-carousel .slick-prev:before,
+.photo-carousel .slick-next:before {
+    font-family: 'icomoon' !important;
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+    font-size: 20px;
+    opacity: .75;
+    color: #000;
+}
+
+.photo-carousel .slick-prev {
+    left: -25px;
+}
+
+.photo-carousel .slick-prev:before {
+	content: "\ea44";
+}
+
+.photo-carousel .slick-next {
+    right: -25px;
+}
+
+.photo-carousel .slick-next:before {
+    content: '\ea42';
+}
